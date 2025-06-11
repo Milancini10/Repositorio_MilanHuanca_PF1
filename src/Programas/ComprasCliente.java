@@ -22,10 +22,16 @@ public class ComprasCliente {
         double totalCompras = compra1 + compra2 + compra3;
         double promedioCompras = totalCompras / 3;
 
+        // Nueva operación: encontrar la compra mayor
+        double compraMayor = Math.max(compra1, Math.max(compra2, compra3));
+
         // Mostrar resultados
         System.out.println("\n--- Resultados ---");
-        System.out.println("Nombre del Cliente: " + nombre);
+        System.out.println("Nombre del Cliente   : " + nombre);
         System.out.println("Total compras        : " + totalCompras);
         System.out.println("Promedio compras     : " + promedioCompras);
+        System.out.println("Compra más alta      : " + compraMayor);
+
+        input.close();
     }
 }
